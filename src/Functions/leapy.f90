@@ -1,13 +1,13 @@
-function leapy(year)
+function leapy(yr)
   implicit none
   logical              :: leapy
-  integer, intent(in)  :: year
+  integer, intent(in)  :: yr
 
-  if (mod(year, 4) .ne. 0) then
+  if (mod(yr, 4) .ne. 0) then
      leapy = .false.
-  elseif(mod(year, 25) .ne. 0) then
+  elseif(mod(yr, 25) .ne. 0) then
      leapy = .true.
-  elseif(mod(year, 16) .ne. 0) then
+  elseif(mod(yr, 16) .ne. 0) then
      leapy = .false.
   else
      leapy = .true.
