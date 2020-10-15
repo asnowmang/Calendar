@@ -1,6 +1,6 @@
 function leapy(year)
   implicit none
-  integer              :: leapy
+  logical              :: leapy
   integer, intent(in)  :: year
 
   if (mod(year, 4) .ne. 0) then
