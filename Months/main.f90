@@ -15,12 +15,10 @@ program months
         end select             
      elseif (mod(n, 2) .eq. 0 .and. n .lt. 8) then
         month(n) = 30
-     elseif (mod(n, 2) .ne. 0 .and. n .lt. 8) then
-        month(n) = 31
-     elseif (mod(n, 2) .eq. 0 .and. n .ge. 8) then
-        month(n) = 31
-     else
+     elseif (mod(n, 2) .ne. 0 .and. n .ge. 8) then
         month(n) = 30
+     else
+        month(n) = 31
      endif
 
      print *, month(n)
